@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <IsAotCompatible>true</IsAotCompatible>
+        <RootNamespace>Helldivers.Models</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AdditionalFiles Include="json/factions.json" GenerateClass="true" />
+        <AdditionalFiles Include="json/planets.json" GenerateClass="true" />
+        <AdditionalFiles Include="json/sectors.json" GenerateClass="true" />
+        <ProjectReference Include="..\Helldivers-2-SourceGen\Helldivers-2-SourceGen.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
+    </ItemGroup>
+
+</Project>
